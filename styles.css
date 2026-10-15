@@ -76,22 +76,26 @@ body {
 }
 
 
-/* CARTA DE PRESENTACION */
+/* -----CARTA DE PRESENTACION -----*/
+
 .card {
-    margin: 100px 600px 0px 600px;
+    width: 100%;
+    display: grid;
+    grid-area: auto;
 }
 
 
 .card__bienvenida {
-    margin-top: 150px;
-    position: relative;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 .card__notas {
     margin: 0;
     font-weight:bolder;
-    font-size: 18px;
+    font-size: 1rem;
     color: #F5B54A;
 }
 
@@ -99,7 +103,7 @@ body {
 .card__titulo {
     white-space: pre-wrap;
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-family: sans-serif;
     color: #f4ecdd;
 }
@@ -107,8 +111,7 @@ body {
 
 .card__descripcion {
     margin-top: 20px;
-    width: 550px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 100;
     font-style: italic;
     color: #f4ecdd;
@@ -118,27 +121,25 @@ body {
 
 .card__imagen {
     filter: drop-shadow(0 0 20px #F5B54A);
-    width: 350px;
+    width: 250px;
     border-radius: 200px;
-    position: absolute;
-    right: 0;
-    top: 10px;
+    display: block;
+    margin: 30px auto;
 }
 
 
 
 .card__link {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
+    font-family: 'Lucida Sans';
     font-weight: bolder;
-    font-size: 15px;
-    margin-top: 70px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card__link--reserva {
     text-decoration: none;
     padding: 15px 30px;
-    margin-right: 20px;
     border: 1px solid #f4ecdd;
     border-radius: 20px;
     background-color: #12100d;
