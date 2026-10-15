@@ -22,11 +22,29 @@
                 <a class="menu__link" href="../rutas-menu/carta.html">CARTA</a>
                 <a class="menu__link" href="../rutas-menu/nosotros.html">NOSOTROS</a>
                 <a class="menu__link" href="../rutas-menu/ubicacion.html">UBICACION</a>
-                <a class="menu__link menu__link--reserva menu__link--activo" href="../rutas-menu/reserva.html">Reservar mesa</a>
+                <a class="menu__link menu__link--reserva menu__link--activo" href="../rutas-menu/reserva.html">RESERVAR MESA</a>
             </div>
         </nav>
 
-        <main></main>
+        <main>
+            <div class="formulario">
+                <form class="reserva-form">
+                <div class="reserva-form__grupo">
+                    <label class="reserva-form__label for="nombre completo:">Nombre</label>
+                    <input class="reserva-form__input" type="text" id="name" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="reserva-form__grupo"></div>
+                <label class="reserva-form__label" for="fecha">Fecha de reserva:</label>
+                <input class="reserva-form__input" type="date" id="fecha" required>
+                <div class="reserva-form__grupo">
+                    <label class="reserva-form__label" for="personas">Número de personas</label>
+                <input class="reserva-form__input" type="number" id="personas" min="1" max="10" value="1" required>
+                </div>
+
+                <button class="reserva-form__boton" type="submit">Reservar ahora</button>
+            </form>
+            </div>
+        </main>
 
         <!--PIE DE PAGINA-->
         <footer>

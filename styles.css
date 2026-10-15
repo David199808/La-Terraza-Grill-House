@@ -10,7 +10,6 @@ body {
     width: 100%;
     margin-top: 20px;
     padding: 0px 0px 30px;
-    position: relative;
     background-color: #12100d;
     display: flex;
     justify-content: center;
@@ -18,7 +17,7 @@ body {
 
 
 .logo__imagen {
-    width: 450px;
+    width: 380px;
     padding: 0;
 }
 
@@ -30,30 +29,30 @@ body {
     font-family: sans-serif;
     position: sticky;
     top:0;
-    display: flex;
-    justify-content: center;
+    
 }
 
 .menu__navegacion {
-    max-width: 100%;
-    padding: 20px 0 20px 0;
+    width: 100%;
     background: #12100df9;
     border-bottom: 1px solid #2a251c;
-    
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .menu__link {
+    width: auto;
     text-decoration: none;
     font-weight: bolder;
     font-size: 17px;
-    margin: 47px;
     padding: 10px 20px;
     background-color: #12100d;
     color: #f4ecdd;
     border: 1px solid #2a251c;
     border-radius: 20px;
-    display: inline;    
 }
 
 .menu__link--reserva {
@@ -79,7 +78,7 @@ body {
 
 /* CARTA DE PRESENTACION */
 .card {
-    margin: 100px 500px 0px 500px;
+    margin: 100px 600px 0px 600px;
 }
 
 
@@ -184,13 +183,16 @@ footer {
 /* CARTA DE PRODUCTOS */
 
 .productos {
-    text-align: center;
-    margin: 100px 400px 100px 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 30px;
+    margin-top: 100px;
+    justify-content: center;
+    place-items: center;
 }
 
 .productos__item {
-    padding: 50px;
-    display: inline-block;
+
 }
 
 .productos__imagen {
@@ -235,4 +237,63 @@ footer {
 
 .nosotros__descripcion--centrado {
     text-align: center;
+}
+
+
+/*RESERVAR MESA*/
+
+.formulario {
+    font-family: sans-serif;
+    background-color: #12100d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0;
+}
+
+.reserva-form {
+    background-color: #2a251c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #000;
+    width: 100%;
+    max-width: 500px;
+}
+
+.reserva-form__grupo {
+    margin-bottom: 20px;
+}
+
+.reserva-form__label {
+    display: block;
+    color: #f4ecdd;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reserva-form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.reserva-form__boton {
+    padding: 12px;
+    background-color: #12100d;
+    color: #f4ecdd;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reserva-form__boton:hover {
+    background-color: #F28C28;
+    color: #12100d;
 }
