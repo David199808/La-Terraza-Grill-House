@@ -209,7 +209,7 @@ footer {
 /* SOBRE NOSOTROS */
 
 .nosotros {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans';
     width: 100%;
     display: flex;
     justify-content: center;
@@ -297,4 +297,21 @@ footer {
 .reserva-form__boton:hover {
     background-color: #F28C28;
     color: #12100d;
+}
+
+
+
+/*-----UBICACION-----*/
+
+.horarios-direccion {
+    color: #f4ecdd;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.mapa {
+    margin-top: 10px;
 }
