@@ -2,64 +2,68 @@
 body {
     margin: 0;
     background: #12100d;
+    font-family: sans-serif;
 }
 
-/*LOGO PRINCIPAL */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-.logo {
+* { outline: px solid red; }
+
+
+
+
+
+/*-----LOGO HEADER----- */
+
+.header {
     width: 100%;
-    margin-top: 20px;
-    padding: 0px 0px 30px;
-    background-color: #12100d;
     display: flex;
     justify-content: center;
 }
 
-
-.logo__imagen {
-    width: 380px;
-    padding: 0;
+.header__imagen {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+/*------LOGO HEADER END------*/
 
-/* MENU DE NAVEGACION */
 
+
+
+
+
+/*-----MENU DE NAVEGACION-----*/
 
 .menu {
-    font-family: sans-serif;
-    position: sticky;
-    top:0;
-    
-}
-
-.menu__navegacion {
-    width: 100%;
-    background: #12100df9;
-    border-bottom: 1px solid #2a251c;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #2a251c;
+    background-color:#12100d;
     gap: 10px;
-    flex-direction: column;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 10px;
 }
 
 
 .menu__link {
-    width: auto;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 17px;
-    padding: 10px 20px;
+    font-size: 0.89rem;
+    padding: 10px 10px;
     background-color: #12100d;
     color: #f4ecdd;
     border: 1px solid #2a251c;
     border-radius: 20px;
 }
 
-.menu__link--reserva {
-    background-color: #12100d;
-}
 .menu__link:hover {
-    color: #FFF6E8;
     border: 1px solid #FFF6E8;
     
 }
@@ -70,56 +74,35 @@ body {
     background-color: #F28C28;
 }
 
-.menu__link--activo:hover {
-    border: 1px solid #F28C28;
-    color: #12100d;
-}
+/*-----MENU DE NAVEGACION END-----*/
+
+
+
 
 
 /* -----CARTA DE PRESENTACION -----*/
 
-.card {
-    width: 100%;
-    display: grid;
-    grid-area: auto;
+.bienvenida {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
-.card__bienvenida {
-    margin-top: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-.card__notas {
-    margin: 0;
-    font-weight:bolder;
-    font-size: 1rem;
+.bienvenida__notas {
     color: #F5B54A;
-}
-
-
-.card__titulo {
-    white-space: pre-wrap;
-    margin-top: 20px;
-    font-size: 2.5rem;
-    font-family: sans-serif;
-    color: #f4ecdd;
-}
-
-
-.card__descripcion {
-    margin-top: 20px;
     font-size: 1rem;
-    font-weight: 100;
     font-style: italic;
-    color: #f4ecdd;
-    
 }
 
+.bienvenida__titulo {
+    color: #f4ecdd;
+}
 
-.card__imagen {
+.bienvenida__descripcion {
+    color: #f4ecdd;
+}
+
+.bienvenida__imagen {
     filter: drop-shadow(0 0 20px #F5B54A);
     width: 250px;
     border-radius: 200px;
@@ -127,56 +110,33 @@ body {
     margin: 30px auto;
 }
 
-
-
-.card__link {
-    font-family: 'Lucida Sans';
+.bienvenida__links {
+    display: flex;
     font-weight: bolder;
     font-size: 1rem;
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.card__link--reserva {
+.bienvenida__link {
     text-decoration: none;
-    padding: 15px 30px;
-    border: 1px solid #f4ecdd;
-    border-radius: 20px;
-    background-color: #12100d;
-    color: #f4ecdd;
-    
-}
-
-.card__link--carta {
-    text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px;
     border: 1px solid #f4ecdd;
     border-radius: 20px;
     background-color: #12100d;
     color: #f4ecdd;
 }
 
-
-.card__link--reserva:hover {
-    border: 0;
-    color: #12100d;
+.bienvenida__link:hover {
     background-color: #F28C28;
-}
-
-.card__link--carta:hover {
-    border: 0;
     color: #12100d;
-    background-color: #F28C28;
+    border-color: #12100d;
 }
+/* -----CARTA DE PRESENTACION -----*/
 
 
-/* PIE DE PAGINA */
-footer {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f4ecde;
-    text-align: center;
 
-}
 
 
 
@@ -185,7 +145,7 @@ footer {
 
 .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
     margin-top: 100px;
     justify-content: center;
@@ -314,4 +274,26 @@ footer {
 
 .mapa {
     margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PIE DE PAGINA */
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f4ecde;
+    text-align: center;
+
 }
