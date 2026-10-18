@@ -5,35 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../imagenes/fotos/logo.svg">
     <link rel="stylesheet" href="../styles.css">
-    <title>Carta La Terraza</title>
+    <title>Nosotros - Reserva</title>
 </head>
 <body>
-    <!--LOGO ENCABEZADO-->
-        <header class="logo">
-            <div class="logo__principal">
-                <img class="logo__imagen" src="../imagenes/fotos/logo.svg" alt="logo terraza grill house">
-            </div>
+
+    <!-----LOGO ENCABEZADO----->
+        <header class="header">
+                <img class="header__imagen" src="../imagenes/fotos/logo.svg" alt="logo terraza grill house">
         </header>
 
-    <!--MENU DE NAVEGACION-->
+    <!-----MENU DE NAVEGACION----->
         <nav class="menu">
-            <div class="menu__navegacion">
                 <a class="menu__link" href="../index.html">INICIO</a>
-                <a class="menu__link" href="../rutas-menu/carta.html">CARTA</a>
-                <a class="menu__link" href="../rutas-menu/nosotros.html">NOSOTROS</a>
-                <a class="menu__link" href="../rutas-menu/ubicacion.html">UBICACION</a>
-                <a class="menu__link menu__link--reserva menu__link--activo" href="../rutas-menu/reserva.html">RESERVAR MESA</a>
-            </div>
+                <a class="menu__link" href="carta.html">CARTA</a>
+                <a class="menu__link" href="nosotros.html">NOSOTROS</a>
+                <a class="menu__link" href="ubicacion.html">UBICACION</a>
+                <a class="menu__link menu__link--reserva menu__link--activo" href="reserva.html">RESERVAR MESA</a>
         </nav>
 
+        <!-----FORMULARIO----->
         <main>
             <div class="formulario">
                 <form class="reserva-form">
                 <div class="reserva-form__grupo">
-                    <label class="reserva-form__label for="nombre completo:">Nombre</label>
-                    <input class="reserva-form__input" type="text" id="name" name="nombre" placeholder="Tu nombre" required>
+                    <label class="reserva-form__label for="nombre">Nombre:</label>
+                    <input class="reserva-form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                 </div>
-                <div class="reserva-form__grupo"></div>
                 <label class="reserva-form__label" for="fecha">Fecha de reserva:</label>
                 <input class="reserva-form__input" type="date" id="fecha" required>
                 <div class="reserva-form__grupo">
@@ -46,7 +43,7 @@
             </div>
         </main>
 
-        <!--PIE DE PAGINA-->
+        <!-----PIE DE PAGINA----->
         <footer>
             <p>&copy; 2026  La Terraza Grill House</p>
             <p>Horario: Martes a Domingo, 06:00 PM - 10:00 PM</p>
