@@ -1,50 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/png" href="imagenes/fotos/logo.svg">
-        <title>La Terraza</title>
-    </head>
-    <body>
-        
-        <!--LOGO ENCABEZADO-->
-        <header class="header">
-                <img class="header__imagen" src="imagenes/fotos/logo.svg" alt="logo terraza grill house">
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="imagenes/fotos/logo.svg" />
+    <title>La Terraza</title>
+  </head>
+  <body>
+    <!--LOGO ENCABEZADO-->
+    <header class="header">
+      <img class="header__imagen" src="imagenes/fotos/logo.svg" alt="logo terraza grill house" />
+    </header>
 
-        <!--MENU DE NAVEGACION-->
-        <nav class="menu">
-                <a class="menu__link menu__link--activo" href="index.html">INICIO</a>
-                <a class="menu__link" href="rutas-menu/carta.html">CARTA</a>
-                <a class="menu__link" href="rutas-menu/nosotros.html">NOSOTROS</a>
-                <a class="menu__link" href="rutas-menu/ubicacion.html">UBICACION</a>
-                <a class="menu__link" href="rutas-menu/reserva.html">RESERVAR MESA</a>
-        </nav>
+    <!--MENU DE NAVEGACION-->
+    <nav class="menu">
+      <a class="menu__link menu__link--activo" href="index.html">INICIO</a>
+      <a class="menu__link" href="rutas-menu/carta.html">CARTA</a>
+      <a class="menu__link" href="rutas-menu/nosotros.html">NOSOTROS</a>
+      <a class="menu__link" href="rutas-menu/ubicacion.html">UBICACION</a>
+      <a class="menu__link" href="rutas-menu/reserva.html">RESERVAR MESA</a>
+      <a class="menu__link" href="rutas-menu/pedido.html">🍔PEDIDO (<span class="menu__contador">0</span>)</a>
+    </nav>
 
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+      <section class="bienvenida">
+        <p class="bienvenida__notas">PARRILLA - BRASA - TERRAZA</p>
+        <h1 class="bienvenida__titulo">Fuego lento, <br />cortes generosos y buena atención.</h1>
+        <p class="bienvenida__descripcion">
+          Carnes a la brasa, preparadas al punto que usted prefiera, para disfrutar en nuestra terraza con familia y
+          amigos.
+        </p>
+        <img class="bienvenida__imagen" src="imagenes/fotos/logo.perfil-terraza.png" alt="La Terraza Grill House" />
 
-        <!--CONTENIDO PRINCIPAL-->
-        <main> 
-            <section class="bienvenida">
-                    <p class="bienvenida__notas">PARRILLA - BRASA - TERRAZA</p>
-                    <h1 class="bienvenida__titulo">Fuego lento, <br>cortes generosos y buena atención.</h1>
-                    <p class="bienvenida__descripcion">Carnes a la brasa, preparadas al punto que usted prefiera, para disfrutar en nuestra terraza con familia y amigos.</p>
-                    <img class="bienvenida__imagen" src="imagenes/fotos/logo.perfil-terraza.png" alt="La Terraza Grill House">
+        <div class="bienvenida__links">
+          <a class="bienvenida__link" href="rutas-menu/carta.html">Ver la carta</a>
+          <a class="bienvenida__link" href="rutas-menu/reserva.html">Reservar mesa</a>
+        </div>
+      </section>
+    </main>
 
-                    <div class="bienvenida__links">
-                        <a class="bienvenida__link" href="rutas-menu/carta.html">Ver la carta</a>
-                        <a class="bienvenida__link" href="rutas-menu/reserva.html">Reservar mesa</a>
-                        </div>
-            </section>
-        </main>
-
-        <!--PIE DE PAGINA-->
-        <footer>
-            <p>&copy; 2026  La Terraza Grill House</p>
-            <p>Horario: Martes a Domingo, 06:00 PM - 10:00 PM</p>
-            <p>Dirección: Barrio Atrium, CALLE 17B Sur #8A-51E <br>Pitalito-Huila-Colombia</p>
-        </footer>
-        
-    </body>
+    <!--PIE DE PAGINA-->
+    <footer>
+      <p>&copy; 2026 La Terraza Grill House</p>
+      <p>Horario: Martes a Domingo, 06:00 PM - 10:00 PM</p>
+      <p>Dirección: Barrio Atrium, CALLE 17B Sur #8A-51E <br />Pitalito-Huila-Colombia</p>
+    </footer>
+  </body>
 </html>

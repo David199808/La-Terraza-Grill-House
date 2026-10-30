@@ -1,332 +1,310 @@
 /* INICIO */
 body {
-    margin: 0;
-    background: #12100d;
-    font-family: sans-serif;
+  margin: 0;
+  background: #12100d;
+  font-family: sans-serif;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-* { outline: px solid red; }
-
-
-
+* {
+  outline: px solid red;
+}
 
 /*-----INDEX-----*/
 /*-----LOGO HEADER----- */
 
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header__imagen {
-    width: 100%;
-    max-width: 350px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /*------LOGO HEADER END------*/
 
-
-
-
-
-
 /*-----MENU DE NAVEGACION-----*/
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-bottom: 1px solid #2a251c;
-    background-color:#12100d;
-    gap: 10px;
-    position: sticky;
-    top: 0;
-    padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid #2a251c;
+  background-color: #12100d;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  padding: 10px 10px;
 }
 
-
 .menu__link {
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 0.89rem;
-    padding: 10px 10px;
-    background-color: #12100d;
-    color: #f4ecdd;
-    border: 1px solid #2a251c;
-    border-radius: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.89rem;
+  padding: 10px 10px;
+  background-color: #12100d;
+  color: #f4ecdd;
+  border: 1px solid #2a251c;
+  border-radius: 20px;
 }
 
 .menu__link:hover {
-    border: 1px solid #FFF6E8;
-    
+  border: 1px solid #fff6e8;
 }
 
-.menu__link--activo, .menu__link--activo:hover {
-    border-color: #12100d;
-    color: #12100d;
-    background-color: #F28C28;
+.menu__link--activo,
+.menu__link--activo:hover {
+  border-color: #12100d;
+  color: #12100d;
+  background-color: #f28c28;
 }
-
-
 
 /*-----MENU DE NAVEGACION END-----*/
-
-
-
-
 
 /* -----MENSAJE DE BIENVENIDA -----*/
 
 .bienvenida {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .bienvenida__notas {
-    color: #F5B54A;
-    font-size: 1rem;
-    font-style: italic;
+  color: #f5b54a;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .bienvenida__titulo {
-    color: #f4ecdd;
+  color: #f4ecdd;
 }
 
 .bienvenida__descripcion {
-    color: #f4ecdd;
+  color: #f4ecdd;
 }
 
 .bienvenida__imagen {
-    filter: drop-shadow(0 0 20px #F5B54A);
-    width: 250px;
-    border-radius: 200px;
-    display: block;
-    margin: 30px auto;
+  filter: drop-shadow(0 0 20px #f5b54a);
+  width: 250px;
+  border-radius: 200px;
+  display: block;
+  margin: 30px auto;
 }
 
 .bienvenida__links {
-    display: flex;
-    font-weight: bolder;
-    font-size: 1rem;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  font-weight: bolder;
+  font-size: 1rem;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .bienvenida__link {
-    text-decoration: none;
-    padding: 15px;
-    border: 1px solid #f4ecdd;
-    border-radius: 20px;
-    background-color: #12100d;
-    color: #f4ecdd;
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid #f4ecdd;
+  border-radius: 20px;
+  background-color: #12100d;
+  color: #f4ecdd;
 }
 
 .bienvenida__link:hover {
-    background-color: #F28C28;
-    color: #12100d;
-    border-color: #12100d;
+  background-color: #f28c28;
+  color: #12100d;
+  border-color: #12100d;
 }
 /* -----MENSAJE DE BIENVENIDA END -----*/
 /*-----INDEX END-----*/
-
-
-
-
 
 /*-----CARTA-----*/
 /*-----CARTA DE PRODUCTOS-----*/
 
 .productos {
-    max-width: 1100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    gap: 30px;
-    margin: auto;
-    justify-content: center;
-    place-items: center;
-    padding: 10px;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 30px;
+  margin: auto;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
 }
 
 .titulo-productos {
-    display: flex;
-    color: #e0ae2c;
-    font-style: italic;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  color: #e0ae2c;
+  font-style: italic;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .productos__item {
-    background-color: #2a251c;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #000;
+  background-color: #2a251c;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #000;
 }
 
 .productos__imagen {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .productos__precio {
-    display: flex;
-    justify-content: center;
-    color: #f4ecdd;
-    font-size: 1.2rem;
-    margin: 0;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  color: #f4ecdd;
+  font-size: 1.2rem;
+  margin: 0;
+  margin: 10px;
 }
 
 .productos__nombre {
-    display: flex;
-    justify-content: center;
-    color: #f4ecdd;
-    font-size: 2rem;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  color: #f4ecdd;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.productos__boton {
+  background-color: #f28c28;
+  border-color: #f28c28;
+  color: #12100d;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 10px 16px;
+  border: none;
 }
 
 /*-----CARTA DE PRODUCTOS END-----*/
 /*-----CARTA END-----*/
 
-
-
-
-
 /*-----NOSOTROS-----*/
 
 .nosotros {
-    max-width: 1000px;
-    display: grid;
-    margin: 50px auto;
-    color: #f4ecdd;
-    border: 15px solid #2a251c;
-    box-shadow: 0 20px 20px #000;
-    border-style: double;
-    font-size: 1.1rem;
-    text-align: justify;
-    padding: 20px;
+  max-width: 1000px;
+  display: grid;
+  margin: 50px auto;
+  color: #f4ecdd;
+  border: 15px solid #2a251c;
+  box-shadow: 0 20px 20px #000;
+  border-style: double;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 20px;
 }
 
 .nosotros__titulo {
-    color: #e0ae2c;
-    text-align: center;
+  color: #e0ae2c;
+  text-align: center;
 }
 
 .nosotros__descripcion--centrado {
-    text-align: center;
+  text-align: center;
 }
 /*-----NOSOTROS END-----*/
-
-
-
-
 
 /*-----UBICACION-----*/
 
 .horarios-direccion {
-    color: #f4ecdd;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1rem;
-    line-height: 2rem;
+  color: #f4ecdd;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .mapa {
-    display: block;
-    width: 100%;
-    max-width: 900px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    border: 0;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border: 0;
 }
 
-
 /*-----UBICACION END-----*/
-
-
-
-
 
 /*-----RESERVAR MESA-----*/
 
 .formulario {
-    background-color: #12100d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    padding: 20px;
+  background-color: #12100d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 .reserva-form {
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px #000;
-    width: 100%;
-    max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px #000;
+  width: 100%;
+  max-width: 500px;
 }
 
 .reserva-form__grupo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .reserva-form__label {
-    display: block;
-    color: #f4ecdd;
-    margin-bottom: 18px;
-    font-weight: bold;
-    font-size: 18px;
+  display: block;
+  color: #f4ecdd;
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .reserva-form__input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    font-size: 15px;
-    box-sizing: border-box;
-    outline: none;
-    background-color: #f4ecdd;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #f4ecdd;
 }
 
 .reserva-form__boton {
-    padding: 12px;
-    background-color: #F28C28;
-    color: #12100d;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    font-weight: bold;
+  padding: 12px;
+  background-color: #f28c28;
+  color: #12100d;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .reserva-form__boton:hover {
-    background-color: #f4ecdd;
-    color: #F28C28;
+  background-color: #f4ecdd;
+  color: #f28c28;
 }
 
 /*-----RESERVAR MESA END-----*/
 
-
-
-
-
-
-
 /*-----PIE DE PAGINA-----*/
 footer {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f4ecde;
-    text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f4ecde;
+  text-align: center;
 }
 /*-----PIE DE PAGINA END-----*/

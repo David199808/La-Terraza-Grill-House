@@ -1,84 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../imagenes/fotos/logo.svg">
-    <link rel="stylesheet" href="../styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../imagenes/fotos/logo.svg" />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Carta - La Terraza</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-----LOGO ENCABEZADO----->
-        <header class="header">
-                <img class="header__imagen" src="../imagenes/fotos/logo.svg" alt="logo terraza grill house">
-        </header>
+    <header class="header">
+      <img class="header__imagen" src="../imagenes/fotos/logo.svg" alt="logo terraza grill house" />
+    </header>
 
     <!-----MENU DE NAVEGACION----->
-        <nav class="menu">
-                <a class="menu__link" href="../index.html">INICIO</a>
-                <a class="menu__link menu__link--activo" href="carta.html">CARTA</a>
-                <a class="menu__link" href="nosotros.html">NOSOTROS</a>
-                <a class="menu__link" href="ubicacion.html">UBICACION</a>
-                <a class="menu__link menu__link--reserva" href="reserva.html">RESERVAR MESA</a>
-        </nav>
+    <nav class="menu">
+      <a class="menu__link" href="../index.html">INICIO</a>
+      <a class="menu__link menu__link--activo" href="carta.html">CARTA</a>
+      <a class="menu__link" href="nosotros.html">NOSOTROS</a>
+      <a class="menu__link" href="ubicacion.html">UBICACION</a>
+      <a class="menu__link menu__link--reserva" href="reserva.html">RESERVAR MESA</a>
+      <a class="menu__link" href="rutas-menu/pedido.html">🍔PEDIDO (<span class="menu__contador">0</span>)</a>
+    </nav>
 
-        <!-----PRODUCTOS----->
-        <main>
-            <h1 class="titulo-productos">Nuestro Menú</h1>
-            <div class="productos">
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/oklahoma-doble.jpg" alt="hamburguesa doble smash">
-                    <p class="productos__nombre">Oklahoma Doble</p>
-                    <p class="productos__precio">$26.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/pollo-apanado.jpg" alt="hamburguesa pollo apanado">
-                    <p class="productos__nombre">Pollo Apanado</p>
-                    <p class="productos__precio">$24.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/grill-imperial.jpg" alt="hamburguesa imperial">
-                    <p class="productos__nombre">Imperial</p>
-                    <p class="productos__precio">$25.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/grill-house.jpg" alt="hamburguesa grill house">
-                    <p class="productos__nombre">Grill House</p>
-                    <p class="productos__precio">$25.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/americana.jpg" alt="hamburguesa americana">
-                    <p class="productos__nombre">Americana</p>
-                    <p class="productos__precio">$25.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/oklahoma-triple.jpg" alt="oklahoma triple">
-                    <p class="productos__nombre">Triple Oklahoma</p>
-                    <p class="productos__precio">$30.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/brocheta-camarones.jpg" alt="brocheta de camarones">
-                    <p class="productos__nombre">Brocheta de camarones</p>
-                    <p class="productos__precio">$35.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/mazorcada.jpg" alt="mazorcada">
-                    <p class="productos__nombre">Mazorcada</p>
-                    <p class="productos__precio">$35.000</p>
-                </article>
-                <article class="productos__item">
-                    <img class="productos__imagen" src="../imagenes/fotos/platos/picada-mixta.jpg" alt="picada mixta">
-                    <p class="productos__nombre">Picada Mixta</p>
-                    <p class="productos__precio">$40.000</p>
-                </article>
-            </div>
-        </main>
+    <!-----PRODUCTOS----->
+    <main>
+      <h1 class="titulo-productos">Nuestro Menú</h1>
+      <div class="productos">
+        <article class="productos__item">
+          <img
+            class="productos__imagen"
+            src="../imagenes/fotos/platos/oklahoma-doble.jpg"
+            alt="hamburguesa doble smash"
+          />
+          <p class="productos__nombre">Oklahoma Doble</p>
+          <p class="productos__precio">$26.000</p>
+          <button class="productos__boton" data-id="1">Agregar al pedido</button>
+        </article>
 
-        <!--PIE DE PAGINA-->
-        <footer>
-            <p>&copy; 2026  La Terraza Grill House</p>
-            <p>Horario: Martes a Domingo, 06:00 PM - 10:00 PM</p>
-            <p>Dirección: Barrio Atrium, CALLE 17B Sur #8A-51E, Pitalito-Huila-Colombia</p>
-        </footer>
-</body>
+        <article class="productos__item">
+          <img
+            class="productos__imagen"
+            src="../imagenes/fotos/platos/pollo-apanado.jpg"
+            alt="hamburguesa pollo apanado"
+          />
+          <p class="productos__nombre">Pollo Apanado</p>
+          <p class="productos__precio">$24.000</p>
+          <button class="productos__boton" data-id="2">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/grill-imperial.jpg" alt="hamburguesa imperial" />
+          <p class="productos__nombre">Imperial</p>
+          <p class="productos__precio">$25.000</p>
+          <button class="productos__boton" data-id="3">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/grill-house.jpg" alt="hamburguesa grill house" />
+          <p class="productos__nombre">Grill House</p>
+          <p class="productos__precio">$25.000</p>
+          <button class="productos__boton" data-id="4">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/americana.jpg" alt="hamburguesa americana" />
+          <p class="productos__nombre">Americana</p>
+          <p class="productos__precio">$25.000</p>
+          <button class="productos__boton" data-id="5">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/oklahoma-triple.jpg" alt="oklahoma triple" />
+          <p class="productos__nombre">Triple Oklahoma</p>
+          <p class="productos__precio">$30.000</p>
+          <button class="productos__boton" data-id="6">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img
+            class="productos__imagen"
+            src="../imagenes/fotos/platos/brocheta-camarones.jpg"
+            alt="brocheta de camarones"
+          />
+          <p class="productos__nombre">Brocheta de camarones</p>
+          <p class="productos__precio">$35.000</p>
+          <button class="productos__boton" data-id="7">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/mazorcada.jpg" alt="mazorcada" />
+          <p class="productos__nombre">Mazorcada</p>
+          <p class="productos__precio">$35.000</p>
+          <button class="productos__boton" data-id="8">Agregar al pedido</button>
+        </article>
+
+        <article class="productos__item">
+          <img class="productos__imagen" src="../imagenes/fotos/platos/picada-mixta.jpg" alt="picada mixta" />
+          <p class="productos__nombre">Picada Mixta</p>
+          <p class="productos__precio">$40.000</p>
+          <button class="productos__boton" data-id="9">Agregar al pedido</button>
+        </article>
+      </div>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+      <p>&copy; 2026 La Terraza Grill House</p>
+      <p>Horario: Martes a Domingo, 06:00 PM - 10:00 PM</p>
+      <p>Dirección: Barrio Atrium, CALLE 17B Sur #8A-51E, Pitalito-Huila-Colombia</p>
+    </footer>
+    <script type="module" src="../js/restaurante.js"></script>
+  </body>
 </html>
