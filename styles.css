@@ -190,6 +190,9 @@ body {
   margin-bottom: 15px;
   padding: 10px 16px;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.2s color 0.2s;
+  border-color: 0.2s;
 }
 
 /*-----CARTA DE PRODUCTOS END-----*/
